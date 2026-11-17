@@ -24,6 +24,7 @@ customers 1──* orders 1──* order_items *──1 products
 OrderManagementSystem/
 ├── README.md
 ├── .gitignore
+├── api/                                # Spring Boot REST API (CRUD) - see api/README.md
 └── sql/
     ├── deploy.sql                      # Master script: runs everything in order
     ├── 00_drop_tables.sql              # Drops all tables (clean rebuild)
@@ -49,3 +50,8 @@ psql -U postgres -d order_management -f sql/deploy.sql
 ```
 
 > **Warning:** `deploy.sql` drops and recreates all tables, so any existing data is lost.
+
+## REST API
+
+The [`api/`](api/) folder holds a separately deployable Spring Boot service with CRUD endpoints
+for every table. See [api/README.md](api/README.md) for build, run and endpoint details.
