@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Local environment / credentials
+.env
+*.local.sql
+
+# Database dumps and logs
+*.dump
+*.backup
+*.log
